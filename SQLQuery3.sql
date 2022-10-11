@@ -4,14 +4,8 @@ where location= 'world'
 order by 2
 
 
-
-
--- looking total cases vs total deaths
-
-s
-
 -- looking total cases vs population
--- show what percentage people got covud
+-- show what percentage people got covid
 select location, date,total_cases,total_deaths, population, (total_cases/population) as covid_cases
 from portfolio_project.dbo.CovidDeaths
 where location= 'india'
